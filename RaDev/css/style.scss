@@ -1,0 +1,189 @@
+body{
+    width: 1140px;
+    margin: 0 auto;
+    font-family: Montserrat;
+
+    button:focus{
+        padding: 0px;
+        background: #ebe2e2bb;
+        border: 0px solid #CDDDE2;
+    }
+    .site-header{
+        &_container{
+            margin-top: -5px;
+            background: #1A1818;
+            height: 30px;
+
+            &_announcement{
+                font-size: 10px;
+                margin: auto auto;
+                padding-right: 200px;
+                a{
+                    color: #CDDDE2;
+                }
+            }
+
+            &_offers{
+                vertical-align: middle;
+                a{
+                    font-weight: bold;
+                    font-size: 15px;
+                    letter-spacing: -0.04em;
+                    text-transform: uppercase;
+                    color: #CDDDE2;
+                    text-decoration: none;
+                }
+                button{
+                    padding: 0px;
+                    height: 30px;
+                    background: #1A1818;
+                    border: 0px;
+                }                
+            }
+        }
+    }
+
+    .header{
+        background: #EEF5F7;
+        height: 90px;
+        max-width: 1140px;
+        margin-left: 0px;
+        display: grid;
+        grid-template-areas: "mail-phone nul items"
+                             "search nul items";
+        grid-template-columns: 391px 1fr 334px;  
+        grid-template-rows: 1fr 1fr;
+
+        &_mail-phone{
+            grid-area: mail-phone;
+            font-size: 11px;
+            width: 246px;
+            margin: auto 40px;
+
+            a{
+                text-decoration: none;
+                color: #1A1818;
+            }
+
+            span{
+                margin-left: 45px;
+            }
+        }
+        &_search{
+            grid-area: search;
+            width: 246px;
+            height: 36px;
+            margin-left: 40px;
+            font-size: 16px;
+            margin: 0px 14px 14px 40px;
+            box-sizing: border-box;
+
+            input{
+                height: 36px;
+                border: 1.2px solid #9BAAAE;
+                border-radius: 6px;
+                padding-left: 10px;
+            }
+
+        }
+        &_items{
+            grid-area: items;
+            padding: 23px 30px;
+            font-size: 15px;
+            font-weight: bold;
+            
+            button{
+                border: 0px solid #CDDDE2;
+            }
+            
+            &_first{
+                width: 127px;
+                height: 44px;
+                bottom: 23px;
+                background: #CDDDE2;
+                border-radius: 4px;                
+            }
+
+            &_second{
+                margin-left: 15px;
+                width: 127px;
+                height: 44px;
+                bottom: 23px;
+                background: #CDDDE2;
+                border-radius: 4px;
+                
+                img{
+                    margin-left: 9px;
+                }
+            }
+        }        
+    }
+
+    
+    .navigation{
+        height: 60px;
+        font-size: 15px;
+        font-weight: bold;
+
+        &_bar{
+            letter-spacing: -0.03em;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            &--item{
+                max-width: 190px;
+                color: #1A1818;
+                padding: 0px;
+                margin-top: 27px;
+                padding: 0px;
+                text-align: center;
+
+            }
+        }
+
+        &_bar:hover{
+            font-size: 1.1em;
+        }
+    }
+
+    hr{
+        margin-top: 1px;
+    }
+
+    .wrapper{
+        background: #EEF5F7;
+        height: 280px;
+
+        &_products{
+            margin: 0px auto 50px 58px;
+            padding-top: 50px;
+
+            &--item{
+                margin-left: 20px;
+                padding-top: 20px;
+                width: 40px;
+            }
+
+            h1{
+                font-size: 34px;
+                font-weight: 700;
+            }
+        }
+
+        &_card{
+            width: 203px;
+            height: 320px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            box-shadow: 0px 2.00325px 6.00976px rgba(0, 0, 0, 0.25);
+            border-radius: 4.0065px;
+
+            &--like{
+                padding: 0px;
+                background: #f7f1f100;
+                border: 0px;
+
+            }
+        }
+    }
+}
